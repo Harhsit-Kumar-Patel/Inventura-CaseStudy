@@ -123,7 +123,7 @@ const Solution = () => {
   };
 
   return (
-    <section id="solution" className="section-padding bg-slate-900 relative overflow-hidden">
+    <section id="solution" className="section-padding bg-slate-50 relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0">
         <motion.div
@@ -150,13 +150,13 @@ const Solution = () => {
         >
           <motion.h2
             variants={itemVariants}
-            className="text-4xl md:text-5xl font-bold mb-6 text-slate-100"
+            className="text-4xl md:text-5xl font-bold mb-6 text-slate-800"
           >
             The Solution: Inventura
           </motion.h2>
           <motion.p
             variants={itemVariants}
-            className="text-xl text-slate-300 max-w-3xl mx-auto"
+            className="text-xl text-slate-600 max-w-3xl mx-auto"
           >
             Revolutionary features that set us apart from traditional inventory management systems
           </motion.p>
@@ -215,7 +215,7 @@ const Solution = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                     transition={{ delay: feature.delay + 0.9 }}
-                    className="text-xl font-semibold text-slate-100 mb-4"
+                    className="text-xl font-semibold text-slate-800 mb-4"
                   >
                     {feature.title}
                   </motion.h3>
@@ -225,7 +225,7 @@ const Solution = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                     transition={{ delay: feature.delay + 1.1 }}
-                    className="text-slate-300 leading-relaxed mb-4"
+                    className="text-slate-600 leading-relaxed mb-4"
                   >
                     {feature.description}
                   </motion.p>
@@ -246,7 +246,7 @@ const Solution = () => {
                         className="flex items-center space-x-2"
                       >
                         <CheckCircle className="w-4 h-4 text-secondary-400 flex-shrink-0" />
-                        <span className="text-slate-400 text-sm">{benefit}</span>
+                        <span className="text-slate-500 text-sm">{benefit}</span>
                       </motion.div>
                     ))}
                   </motion.div>
@@ -258,7 +258,7 @@ const Solution = () => {
                     transition={{ duration: 0.3 }}
                     className="absolute top-8 right-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                   >
-                    <ArrowRight className="w-5 h-5 text-blue-400" />
+                    <ArrowRight className="w-5 h-5 text-blue-600" />
                   </motion.div>
                 </div>
               </motion.div>
@@ -274,10 +274,10 @@ const Solution = () => {
           className="bg-gradient-to-r from-primary-500/10 to-secondary-500/10 rounded-3xl p-8 md:p-12 border border-white/10"
         >
           <div className="text-center mb-8">
-            <h3 className="text-3xl font-bold text-slate-100 mb-4">
+            <h3 className="text-3xl font-bold text-slate-800 mb-4">
               Why Inventura is Different
             </h3>
-            <p className="text-slate-300 text-lg max-w-2xl mx-auto">
+            <p className="text-slate-600 text-lg max-w-2xl mx-auto">
               Built with vendors in mind, not just for them
             </p>
           </div>
@@ -301,8 +301,8 @@ const Solution = () => {
                   >
                     <Icon className="w-8 h-8 text-white" />
                   </motion.div>
-                  <h4 className="text-xl font-semibold text-slate-100 mb-2">{item.title}</h4>
-                  <p className="text-slate-300">{item.description}</p>
+                  <h4 className="text-xl font-semibold text-slate-800 mb-2">{item.title}</h4>
+                  <p className="text-slate-600">{item.description}</p>
                 </motion.div>
               );
             })}
@@ -317,10 +317,10 @@ const Solution = () => {
           className="text-center mt-16"
         >
           <div className="enhanced-card max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold text-slate-100 mb-4">
+            <h3 className="text-2xl font-bold text-slate-800 mb-4">
               Ready to Transform Your Business?
             </h3>
-            <p className="text-slate-300 mb-6">
+            <p className="text-slate-600 mb-6">
               See how Inventura can revolutionize your inventory management
             </p>
             <motion.button
