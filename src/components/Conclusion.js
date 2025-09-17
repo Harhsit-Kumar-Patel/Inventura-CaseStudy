@@ -121,9 +121,9 @@ const Conclusion = () => {
           {/* Main Title */}
           <motion.h2
             variants={itemVariants}
-            className="text-4xl md:text-6xl font-bold mb-8"
+            className="text-4xl md:text-6xl font-bold mb-8 text-slate-100"
           >
-            <span className="gradient-text">Inventura: More Than Just Inventory Management</span>
+            Inventura: More Than Just Inventory Management
           </motion.h2>
 
           {/* Main Description */}
@@ -197,8 +197,8 @@ const Conclusion = () => {
             variants={itemVariants}
             className="bg-gradient-to-r from-primary-500/10 to-secondary-500/10 rounded-3xl p-8 md:p-12 border border-white/10 mb-16"
           >
-            <h3 className="text-3xl font-bold text-white mb-8">
-              <span className="gradient-text">Why Inventura Matters</span>
+            <h3 className="text-3xl font-bold text-slate-100 mb-8">
+              Why Inventura Matters
             </h3>
             
             <div className="grid md:grid-cols-3 gap-8">
@@ -234,9 +234,9 @@ const Conclusion = () => {
             className="text-center"
           >
             <div className="glass-effect rounded-2xl p-8 max-w-2xl mx-auto">
-              <h3 className="text-2xl font-bold text-white mb-4">
-                Ready to Transform Your Inventory Management?
-              </h3>
+            <h3 className="text-2xl font-bold text-slate-100 mb-4">
+              Ready to Transform Your Inventory Management?
+            </h3>
               <p className="text-white/70 mb-6">
                 Join the revolution in smart inventory management. Let's build the future together.
               </p>

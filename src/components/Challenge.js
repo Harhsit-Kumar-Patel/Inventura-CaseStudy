@@ -97,9 +97,9 @@ const Challenge = () => {
         >
           <motion.h2
             variants={itemVariants}
-            className="text-4xl md:text-5xl font-bold mb-6"
+            className="text-4xl md:text-5xl font-bold mb-6 text-slate-100"
           >
-            <span className="gradient-text">The Challenge</span>
+            The Challenge
           </motion.h2>
           <motion.p
             variants={itemVariants}
@@ -244,7 +244,7 @@ const Challenge = () => {
         >
           <div className="enhanced-card max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold text-slate-100 mb-4">
-              These challenges create a <span className="gradient-text">$2.3 trillion</span> opportunity
+              These challenges create a <span className="text-blue-400">$2.3 trillion</span> opportunity
             </h3>
             <p className="text-slate-300 text-lg mb-6">
               Small vendors worldwide lose billions due to inefficient inventory management. 

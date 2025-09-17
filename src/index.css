@@ -45,27 +45,27 @@
 
 @layer components {
   .gradient-text {
-    @apply bg-gradient-to-r from-blue-400 via-emerald-400 to-cyan-400 bg-clip-text text-transparent;
+    @apply text-slate-100;
   }
   
   .gradient-bg {
-    @apply bg-gradient-to-br from-blue-600 via-emerald-600 to-cyan-600;
+    @apply bg-slate-700;
   }
   
   .glass-effect {
-    @apply bg-slate-800/40 backdrop-blur-md border border-slate-700/50;
+    @apply bg-white/5 backdrop-blur-sm border border-white/10;
   }
   
   .card-hover {
-    @apply transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/20;
+    @apply transition-all duration-500 hover:scale-[1.02] hover:shadow-lg hover:shadow-slate-900/20;
   }
   
   .btn-primary {
-    @apply bg-gradient-to-r from-blue-600 to-emerald-600 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/30;
+    @apply bg-slate-800 text-white font-medium px-8 py-3 rounded-lg transition-all duration-300 hover:bg-slate-700 hover:shadow-md border border-slate-600;
   }
   
   .btn-secondary {
-    @apply glass-effect text-slate-100 font-semibold px-8 py-4 rounded-xl transition-all duration-300 hover:scale-105 hover:bg-slate-700/40;
+    @apply glass-effect text-slate-200 font-medium px-8 py-3 rounded-lg transition-all duration-300 hover:bg-white/10 border border-white/20;
   }
   
   .section-padding {
@@ -77,11 +77,11 @@
   }
   
   .text-gradient {
-    @apply bg-gradient-to-r from-blue-400 via-emerald-400 to-cyan-400 bg-clip-text text-transparent;
+    @apply text-slate-100;
   }
   
   .enhanced-card {
-    @apply bg-slate-800/60 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-8 transition-all duration-500 hover:border-slate-600/60 hover:shadow-2xl hover:shadow-blue-500/10 hover:-translate-y-2;
+    @apply bg-slate-800/30 backdrop-blur-sm border border-slate-700/30 rounded-xl p-6 transition-all duration-500 hover:border-slate-600/50 hover:shadow-lg hover:shadow-slate-900/10 hover:-translate-y-1;
   }
   
   .floating-animation {
@@ -96,7 +96,7 @@
     @apply bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900;
   }
   
-  /* Improved text readability classes */
+  /* Professional text colors */
   .text-primary {
     @apply text-slate-100;
   }
@@ -123,6 +123,23 @@
   
   .text-error {
     @apply text-red-400;
+  }
+  
+  /* Professional accent colors */
+  .accent-blue {
+    @apply text-blue-400;
+  }
+  
+  .accent-emerald {
+    @apply text-emerald-400;
+  }
+  
+  .accent-amber {
+    @apply text-amber-400;
+  }
+  
+  .accent-slate {
+    @apply text-slate-400;
   }
 }
 

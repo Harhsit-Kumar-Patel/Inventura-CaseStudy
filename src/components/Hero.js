@@ -6,10 +6,10 @@ const Hero = () => {
   const [isPlaying, setIsPlaying] = useState(false);
 
   const keyFeatures = [
-    { icon: TrendingUp, text: 'AI Forecasting', color: 'from-blue-500 to-cyan-500' },
-    { icon: Users, text: 'Community Exchange', color: 'from-emerald-500 to-teal-500' },
-    { icon: Mic, text: 'Voice Commands', color: 'from-cyan-500 to-blue-500' },
-    { icon: Leaf, text: 'Sustainability', color: 'from-teal-500 to-emerald-500' },
+    { icon: TrendingUp, text: 'AI Forecasting', color: 'bg-blue-600', accent: 'text-blue-400' },
+    { icon: Users, text: 'Community Exchange', color: 'bg-emerald-600', accent: 'text-emerald-400' },
+    { icon: Mic, text: 'Voice Commands', color: 'bg-slate-600', accent: 'text-slate-400' },
+    { icon: Leaf, text: 'Sustainability', color: 'bg-amber-600', accent: 'text-amber-400' },
   ];
 
   const stats = [
@@ -101,13 +101,13 @@ const Hero = () => {
                     className="text-center p-4 rounded-xl glass-effect hover:shadow-lg transition-all duration-300"
                   >
                     <motion.div
-                      whileHover={{ rotate: 360 }}
-                      transition={{ duration: 0.5 }}
-                      className={`w-12 h-12 bg-gradient-to-r ${feature.color} rounded-lg flex items-center justify-center mx-auto mb-3`}
+                      whileHover={{ scale: 1.1 }}
+                      transition={{ duration: 0.3 }}
+                      className={`w-12 h-12 ${feature.color} rounded-lg flex items-center justify-center mx-auto mb-3 shadow-md`}
                     >
                       <Icon className="w-6 h-6 text-white" />
                     </motion.div>
-                    <div className="text-sm font-medium text-slate-100">
+                    <div className={`text-sm font-medium ${feature.accent}`}>
                       {feature.text}
                     </div>
                   </motion.div>
@@ -130,7 +130,7 @@ const Hero = () => {
                   transition={{ delay: 1.2 + index * 0.1, duration: 0.5 }}
                   className="text-center"
                 >
-                  <div className="text-3xl sm:text-4xl font-bold gradient-text mb-2">
+                  <div className="text-3xl sm:text-4xl font-bold text-slate-100 mb-2">
                     {stat.number}
                   </div>
                   <div className="text-slate-300 text-sm">

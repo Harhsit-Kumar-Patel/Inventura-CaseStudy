@@ -165,9 +165,9 @@ const Results = () => {
         >
           <motion.h2
             variants={itemVariants}
-            className="text-4xl md:text-5xl font-bold mb-6"
+            className="text-4xl md:text-5xl font-bold mb-6 text-slate-100"
           >
-            <span className="gradient-text">Expected Results & Benefits</span>
+            Expected Results & Benefits
           </motion.h2>
           <motion.p
             variants={itemVariants}
@@ -258,8 +258,8 @@ const Results = () => {
           className="bg-gradient-to-r from-primary-500/10 to-secondary-500/10 rounded-3xl p-8 md:p-12 border border-white/10 mb-16"
         >
           <div className="text-center mb-8">
-            <h3 className="text-3xl font-bold text-white mb-4">
-              <span className="gradient-text">Transformative Impact</span>
+            <h3 className="text-3xl font-bold text-slate-100 mb-4">
+              Transformative Impact
             </h3>
             <p className="text-white/70 text-lg max-w-2xl mx-auto">
               Inventura doesn't just track inventory - it transforms how vendors do business
@@ -301,8 +301,8 @@ const Results = () => {
           className="text-center"
         >
           <div className="enhanced-card max-w-4xl mx-auto">
-            <h3 className="text-2xl font-bold text-white mb-4">
-              <span className="gradient-text">ROI Calculator</span>
+            <h3 className="text-2xl font-bold text-slate-100 mb-4">
+              ROI Calculator
             </h3>
             <p className="text-white/70 text-lg mb-6">
               For a typical small vendor with ₹50,000 monthly inventory turnover

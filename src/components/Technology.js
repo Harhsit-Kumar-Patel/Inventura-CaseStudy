@@ -135,9 +135,9 @@ const Technology = () => {
         >
           <motion.h2
             variants={itemVariants}
-            className="text-4xl md:text-5xl font-bold mb-6"
+            className="text-4xl md:text-5xl font-bold mb-6 text-slate-100"
           >
-            <span className="gradient-text">Technology Stack</span>
+            Technology Stack
           </motion.h2>
           <motion.p
             variants={itemVariants}
@@ -260,8 +260,8 @@ const Technology = () => {
           className="bg-gradient-to-r from-primary-500/10 to-secondary-500/10 rounded-3xl p-8 md:p-12 border border-white/10"
         >
           <div className="text-center mb-8">
-            <h3 className="text-3xl font-bold text-white mb-4">
-              <span className="gradient-text">Architecture Principles</span>
+            <h3 className="text-3xl font-bold text-slate-100 mb-4">
+              Architecture Principles
             </h3>
             <p className="text-white/70 text-lg max-w-2xl mx-auto">
               Built with scalability, security, and performance in mind
@@ -303,8 +303,8 @@ const Technology = () => {
           className="text-center mt-16"
         >
           <div className="enhanced-card max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold text-white mb-4">
-              <span className="gradient-text">Ready to See Results?</span>
+            <h3 className="text-2xl font-bold text-slate-100 mb-4">
+              Ready to See Results?
             </h3>
             <p className="text-white/70 mb-6">
               Discover the measurable impact Inventura can have on your business

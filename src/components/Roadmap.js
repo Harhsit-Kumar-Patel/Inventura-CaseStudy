@@ -126,9 +126,9 @@ const Roadmap = () => {
         >
           <motion.h2
             variants={itemVariants}
-            className="text-4xl md:text-5xl font-bold mb-6"
+            className="text-4xl md:text-5xl font-bold mb-6 text-slate-100"
           >
-            <span className="gradient-text">Implementation Roadmap</span>
+            Implementation Roadmap
           </motion.h2>
           <motion.p
             variants={itemVariants}
@@ -276,8 +276,8 @@ const Roadmap = () => {
                 <Zap className="w-10 h-10 text-white" />
               </div>
             </motion.div>
-            <h3 className="text-3xl font-bold text-white mb-4">
-              <span className="gradient-text">From MVP to Market Leader</span>
+            <h3 className="text-3xl font-bold text-slate-100 mb-4">
+              From MVP to Market Leader
             </h3>
             <p className="text-white/70 text-lg max-w-2xl mx-auto mb-6">
               A systematic approach to building a comprehensive inventory management ecosystem 
