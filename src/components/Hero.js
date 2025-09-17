@@ -30,16 +30,16 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-50 via-white to-slate-100">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-slate-900">
       {/* Clean Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-slate-100">
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
         <motion.div
           animate={{
             background: [
-              'radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.05) 0%, transparent 50%)',
-              'radial-gradient(circle at 80% 20%, rgba(16, 185, 129, 0.05) 0%, transparent 50%)',
-              'radial-gradient(circle at 40% 80%, rgba(245, 158, 11, 0.05) 0%, transparent 50%)',
-              'radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.05) 0%, transparent 50%)',
+              'radial-gradient(circle at 20% 50%, rgba(14, 165, 233, 0.1) 0%, transparent 50%)',
+              'radial-gradient(circle at 80% 20%, rgba(16, 185, 129, 0.1) 0%, transparent 50%)',
+              'radial-gradient(circle at 40% 80%, rgba(20, 184, 166, 0.1) 0%, transparent 50%)',
+              'radial-gradient(circle at 20% 50%, rgba(14, 165, 233, 0.1) 0%, transparent 50%)',
             ],
           }}
           transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
@@ -69,14 +69,14 @@ const Hero = () => {
                 Inventura
               </motion.span>
               <br />
-              <span className="text-slate-800 text-4xl sm:text-5xl md:text-6xl">The Smart Inventory Assistant</span>
+              <span className="text-white text-4xl sm:text-5xl md:text-6xl">The Smart Inventory Assistant</span>
             </motion.h1>
 
             <motion.p
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.8 }}
-              className="text-xl sm:text-2xl text-slate-600 mb-12 leading-relaxed max-w-3xl mx-auto"
+              className="text-xl sm:text-2xl text-slate-200 mb-12 leading-relaxed max-w-3xl mx-auto"
             >
               Revolutionizing inventory management for small & mid-scale vendors with AI-powered insights, 
               community collaboration, and sustainable business practices.
@@ -130,10 +130,10 @@ const Hero = () => {
                   transition={{ delay: 1.2 + index * 0.1, duration: 0.5 }}
                   className="text-center"
                 >
-                  <div className="text-3xl sm:text-4xl font-bold text-slate-800 mb-2">
+                  <div className="text-3xl sm:text-4xl font-bold text-slate-100 mb-2">
                     {stat.number}
                   </div>
-                  <div className="text-slate-600 text-sm">
+                  <div className="text-slate-300 text-sm">
                     {stat.label}
                   </div>
                 </motion.div>
@@ -155,20 +155,20 @@ const Hero = () => {
         <motion.div
           animate={{ y: [0, 8, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
-          className="w-6 h-10 border-2 border-slate-400 rounded-full flex justify-center cursor-pointer hover:border-slate-600 transition-colors duration-300"
+          className="w-6 h-10 border-2 border-slate-400 rounded-full flex justify-center cursor-pointer hover:border-slate-300 transition-colors duration-300"
           onClick={scrollToNext}
         >
           <motion.div
             animate={{ y: [0, 10, 0] }}
             transition={{ duration: 2, repeat: Infinity }}
-            className="w-1 h-3 bg-slate-600 rounded-full mt-2"
+            className="w-1 h-3 bg-slate-300 rounded-full mt-2"
           />
         </motion.div>
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 2 }}
-          className="text-slate-500 text-xs mt-3 text-center"
+          className="text-slate-400 text-xs mt-3 text-center"
         >
           Scroll to explore
         </motion.p>

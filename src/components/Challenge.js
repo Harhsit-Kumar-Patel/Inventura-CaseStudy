@@ -81,7 +81,7 @@ const Challenge = () => {
   };
 
   return (
-    <section id="challenge" className="section-padding bg-white relative overflow-hidden">
+    <section id="challenge" className="section-padding bg-slate-800 relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0 bg-hero-pattern"></div>
@@ -97,13 +97,13 @@ const Challenge = () => {
         >
           <motion.h2
             variants={itemVariants}
-            className="text-4xl md:text-5xl font-bold mb-6 text-slate-800"
+            className="text-4xl md:text-5xl font-bold mb-6 text-slate-100"
           >
             The Challenge
           </motion.h2>
           <motion.p
             variants={itemVariants}
-            className="text-xl text-slate-600 max-w-3xl mx-auto"
+            className="text-xl text-slate-300 max-w-3xl mx-auto"
           >
             Key obstacles facing small vendors today that prevent them from adopting modern inventory management solutions
           </motion.p>
@@ -136,7 +136,7 @@ const Challenge = () => {
                 <div className={`text-3xl font-bold ${stat.color} mb-2`}>
                   {stat.value}
                 </div>
-                <div className="text-slate-600 text-sm">
+                <div className="text-slate-300 text-sm">
                   {stat.label}
                 </div>
               </motion.div>
@@ -198,7 +198,7 @@ const Challenge = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                     transition={{ delay: index * 0.1 + 0.9 }}
-                    className="text-xl font-semibold text-slate-800 mb-4"
+                    className="text-xl font-semibold text-slate-100 mb-4"
                   >
                     {challenge.title}
                   </motion.h3>
@@ -207,7 +207,7 @@ const Challenge = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                     transition={{ delay: index * 0.1 + 1.1 }}
-                    className="text-slate-600 leading-relaxed mb-4"
+                    className="text-slate-300 leading-relaxed mb-4"
                   >
                     {challenge.description}
                   </motion.p>
@@ -243,10 +243,10 @@ const Challenge = () => {
           className="text-center mt-16"
         >
           <div className="enhanced-card max-w-4xl mx-auto">
-            <h3 className="text-2xl font-bold text-slate-800 mb-4">
-              These challenges create a <span className="text-blue-600">$2.3 trillion</span> opportunity
+            <h3 className="text-2xl font-bold text-slate-100 mb-4">
+              These challenges create a <span className="text-blue-400">$2.3 trillion</span> opportunity
             </h3>
-            <p className="text-slate-600 text-lg mb-6">
+            <p className="text-slate-300 text-lg mb-6">
               Small vendors worldwide lose billions due to inefficient inventory management. 
               Inventura addresses these pain points with innovative, accessible solutions.
             </p>
@@ -255,7 +255,7 @@ const Challenge = () => {
               whileTap={{ scale: 0.95 }}
               className="inline-block"
             >
-              <div className="flex items-center justify-center space-x-2 text-blue-600">
+              <div className="flex items-center justify-center space-x-2 text-blue-400">
                 <TrendingDown className="w-5 h-5" />
                 <span className="font-semibold">Scroll to see our solution</span>
               </div>

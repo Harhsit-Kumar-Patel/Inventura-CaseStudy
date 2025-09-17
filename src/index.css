@@ -9,8 +9,8 @@
   
   body {
     font-family: 'Inter', system-ui, sans-serif;
-    background-color: #fafbfc;
-    color: #1e293b;
+    background-color: #0a0e1a;
+    color: #f8fafc;
     overflow-x: hidden;
     line-height: 1.6;
   }
@@ -21,51 +21,51 @@
   
   /* Improved text contrast */
   h1, h2, h3, h4, h5, h6 {
-    color: #0f172a;
+    color: #ffffff;
     font-weight: 600;
     line-height: 1.2;
   }
   
   p {
-    color: #475569;
+    color: #e2e8f0;
     line-height: 1.7;
   }
   
   /* Better link colors */
   a {
-    color: #3b82f6;
+    color: #60a5fa;
     text-decoration: none;
     transition: color 0.2s ease;
   }
   
   a:hover {
-    color: #2563eb;
+    color: #93c5fd;
   }
 }
 
 @layer components {
   .gradient-text {
-    @apply text-slate-800;
+    @apply text-slate-100;
   }
   
   .gradient-bg {
-    @apply bg-blue-600;
+    @apply bg-slate-700;
   }
   
   .glass-effect {
-    @apply bg-white/80 backdrop-blur-sm border border-slate-200/50 shadow-sm;
+    @apply bg-white/5 backdrop-blur-sm border border-white/10;
   }
   
   .card-hover {
-    @apply transition-all duration-500 hover:scale-[1.02] hover:shadow-xl hover:shadow-slate-200/50;
+    @apply transition-all duration-500 hover:scale-[1.02] hover:shadow-lg hover:shadow-slate-900/20;
   }
   
   .btn-primary {
-    @apply bg-blue-600 text-white font-medium px-8 py-3 rounded-lg transition-all duration-300 hover:bg-blue-700 hover:shadow-lg border border-blue-600;
+    @apply bg-slate-800 text-white font-medium px-8 py-3 rounded-lg transition-all duration-300 hover:bg-slate-700 hover:shadow-md border border-slate-600;
   }
   
   .btn-secondary {
-    @apply glass-effect text-slate-700 font-medium px-8 py-3 rounded-lg transition-all duration-300 hover:bg-white/90 border border-slate-300;
+    @apply glass-effect text-slate-200 font-medium px-8 py-3 rounded-lg transition-all duration-300 hover:bg-white/10 border border-white/20;
   }
   
   .section-padding {
@@ -77,11 +77,11 @@
   }
   
   .text-gradient {
-    @apply text-slate-800;
+    @apply text-slate-100;
   }
   
   .enhanced-card {
-    @apply bg-white/70 backdrop-blur-sm border border-slate-200/50 rounded-xl p-6 transition-all duration-500 hover:border-slate-300/70 hover:shadow-xl hover:shadow-slate-200/30 hover:-translate-y-1;
+    @apply bg-slate-800/30 backdrop-blur-sm border border-slate-700/30 rounded-xl p-6 transition-all duration-500 hover:border-slate-600/50 hover:shadow-lg hover:shadow-slate-900/10 hover:-translate-y-1;
   }
   
   .floating-animation {
@@ -93,53 +93,53 @@
   }
   
   .parallax-bg {
-    @apply bg-gradient-to-br from-slate-50 via-white to-slate-100;
+    @apply bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900;
   }
   
-  /* Light theme text colors */
+  /* Professional text colors */
   .text-primary {
-    @apply text-slate-800;
+    @apply text-slate-100;
   }
   
   .text-secondary {
-    @apply text-slate-600;
+    @apply text-slate-300;
   }
   
   .text-muted {
-    @apply text-slate-500;
+    @apply text-slate-400;
   }
   
   .text-accent {
-    @apply text-blue-600;
+    @apply text-blue-400;
   }
   
   .text-success {
-    @apply text-emerald-600;
+    @apply text-emerald-400;
   }
   
   .text-warning {
-    @apply text-amber-600;
+    @apply text-amber-400;
   }
   
   .text-error {
-    @apply text-red-600;
+    @apply text-red-400;
   }
   
-  /* Light theme accent colors */
+  /* Professional accent colors */
   .accent-blue {
-    @apply text-blue-600;
+    @apply text-blue-400;
   }
   
   .accent-emerald {
-    @apply text-emerald-600;
+    @apply text-emerald-400;
   }
   
   .accent-amber {
-    @apply text-amber-600;
+    @apply text-amber-400;
   }
   
   .accent-slate {
-    @apply text-slate-600;
+    @apply text-slate-400;
   }
 }
 
