@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { 
@@ -116,20 +116,6 @@ const Results = () => {
     },
   };
 
-  // Counter animation effect
-  useEffect(() => {
-    if (inView) {
-      const timer = setTimeout(() => {
-        setCounters({
-          timeSaved: 70,
-          stockReduction: 80,
-          wastageReduction: 30,
-        });
-      }, 1000);
-
-      return () => clearTimeout(timer);
-    }
-  }, [inView]);
 
   return (
     <section id="results" className="section-padding bg-dark-900 relative overflow-hidden">
