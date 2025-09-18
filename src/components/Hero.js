@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowDown, TrendingUp, Users, Mic, Leaf } from 'lucide-react';
+import { TrendingUp, Users, Mic, Leaf } from 'lucide-react';
 
 const Hero = () => {
-  const [isPlaying, setIsPlaying] = useState(false);
 
   const keyFeatures = [
     { icon: TrendingUp, text: 'AI Forecasting', color: 'bg-blue-600', accent: 'text-blue-400' },
@@ -20,9 +19,6 @@ const Hero = () => {
     }
   };
 
-  const toggleAnimation = () => {
-    setIsPlaying(!isPlaying);
-  };
 
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-slate-900">

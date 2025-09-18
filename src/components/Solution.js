@@ -8,7 +8,6 @@ import {
   Tags, 
   Leaf, 
   Smartphone,
-  Zap,
   Target,
   TrendingUp,
   ArrowRight,

@@ -8,7 +8,6 @@ import {
   Brain, 
   MessageSquare, 
   Cloud,
-  Code,
   Zap,
   Shield,
   Globe,

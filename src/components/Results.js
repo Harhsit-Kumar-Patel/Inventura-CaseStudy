@@ -11,8 +11,7 @@ import {
   Target,
   Zap,
   Award,
-  ArrowRight,
-  CheckCircle
+  ArrowRight
 } from 'lucide-react';
 
 const Results = () => {
@@ -21,11 +20,6 @@ const Results = () => {
     threshold: 0.1,
   });
 
-  const [counters, setCounters] = useState({
-    timeSaved: 0,
-    stockReduction: 0,
-    wastageReduction: 0,
-  });
 
   const results = [
     {
