@@ -5,41 +5,13 @@ import { Boxes, Mail, Phone, MapPin, Github, Linkedin, Twitter, ArrowUp } from '
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
-  const footerLinks = {
-    product: [
-      { name: 'Features', href: '#solution' },
-      { name: 'Technology', href: '#technology' },
-      { name: 'Roadmap', href: '#roadmap' },
-      { name: 'Pricing', href: '#' },
-    ],
-    company: [
-      { name: 'About', href: '#hero' },
-      { name: 'Case Study', href: '#challenge' },
-      { name: 'Results', href: '#results' },
-      { name: 'Contact', href: '#' },
-    ],
-    resources: [
-      { name: 'Documentation', href: '#' },
-      { name: 'API Reference', href: '#' },
-      { name: 'Support', href: '#' },
-      { name: 'Community', href: '#' },
-    ],
-  };
 
   const socialLinks = [
-    { icon: Github, href: '#', label: 'GitHub' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
+    { icon: Github, href: 'https://github.com/Harhsit-Kumar-Patel', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/harshit-patel-900729205/', label: 'LinkedIn' },
     { icon: Twitter, href: '#', label: 'Twitter' },
   ];
 
-  const scrollToSection = (href) => {
-    if (href.startsWith('#')) {
-      const element = document.querySelector(href);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
-  };
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -60,9 +32,9 @@ const Footer = () => {
       <div className="container-custom">
         {/* Main Footer Content */}
         <div className="py-16">
-          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
+          <div className="flex justify-center">
             {/* Brand Section */}
-            <div className="lg:col-span-2">
+            <div className="max-w-2xl text-center">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -92,85 +64,26 @@ const Footer = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
                 viewport={{ once: true }}
-                className="space-y-3"
+                className="space-y-3 flex flex-col items-center"
               >
                 <div className="flex items-center space-x-3 text-white/70 hover:text-white transition-colors duration-200">
                   <Mail className="w-5 h-5 text-primary-400" />
-                  <span>hello@inventura.com</span>
+                  <span>work.harshitpatel@gmail.com</span>
                 </div>
                 <div className="flex items-center space-x-3 text-white/70 hover:text-white transition-colors duration-200">
                   <Phone className="w-5 h-5 text-primary-400" />
-                  <span>+91 98765 43210</span>
+                  <span>+91 6386226495</span>
                 </div>
                 <div className="flex items-center space-x-3 text-white/70 hover:text-white transition-colors duration-200">
                   <MapPin className="w-5 h-5 text-primary-400" />
-                  <span>Mumbai, India</span>
+                  <span>Chennai, India</span>
                 </div>
               </motion.div>
             </div>
 
-            {/* Links Sections */}
-            {Object.entries(footerLinks).map(([category, links], index) => (
-              <motion.div
-                key={category}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                viewport={{ once: true }}
-              >
-                <h3 className="text-lg font-semibold text-white mb-4 capitalize">
-                  {category}
-                </h3>
-                <ul className="space-y-3">
-                  {links.map((link) => (
-                    <li key={link.name}>
-                      <motion.button
-                        whileHover={{ x: 5 }}
-                        whileTap={{ scale: 0.95 }}
-                        onClick={() => scrollToSection(link.href)}
-                        className="text-white/70 hover:text-white transition-colors duration-200 text-left"
-                      >
-                        {link.name}
-                      </motion.button>
-                    </li>
-                  ))}
-                </ul>
-              </motion.div>
-            ))}
           </div>
         </div>
 
-        {/* Newsletter Signup */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="py-8 border-t border-white/10"
-        >
-          <div className="text-center">
-            <h3 className="text-xl font-semibold text-white mb-4">
-              Stay Updated with Inventura
-            </h3>
-            <p className="text-white/70 mb-6">
-              Get the latest updates on our development progress and feature releases
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-1 px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-primary-400 focus:ring-2 focus:ring-primary-400/20 transition-all duration-200"
-              />
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="btn-primary whitespace-nowrap"
-              >
-                Subscribe
-              </motion.button>
-            </div>
-          </div>
-        </motion.div>
 
         {/* Bottom Footer */}
         <div className="py-8 border-t border-white/10">
@@ -183,7 +96,7 @@ const Footer = () => {
               viewport={{ once: true }}
               className="text-white/60 text-sm"
             >
-              © {currentYear} Inventura. All rights reserved. Built with ❤️ for small vendors worldwide.
+              © {currentYear} Harshit Kumar Patel. All rights reserved. Built with ❤️ for small vendors worldwide.
             </motion.div>
 
             {/* Social Links */}

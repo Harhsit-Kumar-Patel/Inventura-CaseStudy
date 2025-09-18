@@ -12,11 +12,6 @@ const Hero = () => {
     { icon: Leaf, text: 'Sustainability', color: 'bg-amber-600', accent: 'text-amber-400' },
   ];
 
-  const stats = [
-    { number: '60-70%', label: 'Time Saved' },
-    { number: '80%', label: 'Fewer Errors' },
-    { number: '₹50K', label: 'Monthly Savings' },
-  ];
 
   const scrollToNext = () => {
     const nextSection = document.querySelector('#challenge');
@@ -115,30 +110,7 @@ const Hero = () => {
               })}
             </motion.div>
 
-            {/* Stats - Simplified */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1, duration: 0.8 }}
-              className="grid grid-cols-3 gap-8 mb-12"
-            >
-              {stats.map((stat, index) => (
-                <motion.div
-                  key={stat.label}
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ delay: 1.2 + index * 0.1, duration: 0.5 }}
-                  className="text-center"
-                >
-                  <div className="text-3xl sm:text-4xl font-bold text-slate-100 mb-2">
-                    {stat.number}
-                  </div>
-                  <div className="text-slate-300 text-sm">
-                    {stat.label}
-                  </div>
-                </motion.div>
-              ))}
-            </motion.div>
+
 
           </motion.div>
 

@@ -17,7 +17,7 @@ const Challenge = () => {
       description: 'Vendors often don\'t trust software because it feels complicated and intimidating.',
       color: 'text-red-400',
       bgColor: 'from-red-500/20 to-orange-500/20',
-      stats: '73% avoid digital tools',
+      stats: 'Many avoid digital tools',
       delay: 0,
     },
     {
@@ -27,7 +27,7 @@ const Challenge = () => {
       description: 'Many lack stable internet or computer literacy, making digital solutions inaccessible.',
       color: 'text-orange-400',
       bgColor: 'from-orange-500/20 to-yellow-500/20',
-      stats: '45% have poor connectivity',
+      stats: 'Many have poor connectivity',
       delay: 0.1,
     },
     {
@@ -37,7 +37,7 @@ const Challenge = () => {
       description: 'Suppliers and vendors don\'t collaborate efficiently, leading to wastage and losses.',
       color: 'text-yellow-400',
       bgColor: 'from-yellow-500/20 to-green-500/20',
-      stats: '60% coordination issues',
+      stats: 'Common coordination issues',
       delay: 0.2,
     },
     {
@@ -47,15 +47,15 @@ const Challenge = () => {
       description: 'No system helps vendors make smarter business decisions - they only track, they don\'t advise.',
       color: 'text-blue-400',
       bgColor: 'from-blue-500/20 to-purple-500/20',
-      stats: '85% lack insights',
+      stats: 'Most lack insights',
       delay: 0.3,
     },
   ];
 
   const impactStats = [
-    { icon: TrendingDown, value: '$2.3T', label: 'Global Opportunity Cost', color: 'text-red-400' },
-    { icon: Clock, value: '40%', label: 'Time Wasted Daily', color: 'text-orange-400' },
-    { icon: DollarSign, value: '₹50K', label: 'Monthly Losses (Avg)', color: 'text-yellow-400' },
+    { icon: TrendingDown, value: 'Significant', label: 'Global Opportunity Cost', color: 'text-red-400' },
+    { icon: Clock, value: 'Substantial', label: 'Time Wasted Daily', color: 'text-orange-400' },
+    { icon: DollarSign, value: 'Considerable', label: 'Monthly Losses (Avg)', color: 'text-yellow-400' },
   ];
 
   const containerVariants = {

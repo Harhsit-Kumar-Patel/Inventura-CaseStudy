@@ -69,7 +69,7 @@ const Technology = () => {
       technologies: ['Docker', 'Kubernetes', 'AWS/DigitalOcean'],
       color: 'from-teal-500 to-blue-500',
       description: 'Cloud-native deployment with auto-scaling',
-      features: ['99.9% Uptime', 'Global CDN', 'Auto-scaling']
+      features: ['High Uptime', 'Global CDN', 'Auto-scaling']
     },
   ];
 

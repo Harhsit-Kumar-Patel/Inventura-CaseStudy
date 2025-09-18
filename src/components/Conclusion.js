@@ -4,13 +4,7 @@ import { useInView } from 'react-intersection-observer';
 import { 
   CheckCircle, 
   ArrowRight, 
-  Star,
-  Heart,
-  Globe,
-  Zap,
-  Users,
-  TrendingUp,
-  Award
+  Star
 } from 'lucide-react';
 
 const Conclusion = () => {
@@ -42,32 +36,6 @@ const Conclusion = () => {
     },
   ];
 
-  const whyInventuraMatters = [
-    {
-      icon: Heart,
-      title: 'Vendor-Centric',
-      description: 'Built by understanding real vendor pain points and daily challenges',
-      color: 'from-primary-500 to-secondary-500'
-    },
-    {
-      icon: Globe,
-      title: 'Globally Scalable',
-      description: 'Designed to work across different markets and cultural contexts',
-      color: 'from-secondary-500 to-accent-500'
-    },
-    {
-      icon: Zap,
-      title: 'Future-Ready',
-      description: 'Leveraging cutting-edge technology for tomorrow\'s business needs',
-      color: 'from-accent-500 to-primary-500'
-    },
-  ];
-
-  const finalStats = [
-    { icon: Users, value: '10M+', label: 'Potential Users', color: 'text-primary-400' },
-    { icon: TrendingUp, value: '₹500B', label: 'Market Opportunity', color: 'text-secondary-400' },
-    { icon: Award, value: '95%', label: 'User Satisfaction', color: 'text-accent-400' },
-  ];
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -160,73 +128,6 @@ const Conclusion = () => {
             })}
           </motion.div>
 
-          {/* Final Statistics */}
-          <motion.div
-            variants={containerVariants}
-            className="grid md:grid-cols-3 gap-8 mb-16"
-          >
-            {finalStats.map((stat, index) => {
-              const Icon = stat.icon;
-              return (
-                <motion.div
-                  key={stat.label}
-                  variants={itemVariants}
-                  whileHover={{ scale: 1.05 }}
-                  className="text-center"
-                >
-                  <motion.div
-                    whileHover={{ rotate: 360 }}
-                    transition={{ duration: 0.5 }}
-                    className={`w-16 h-16 ${stat.color} mx-auto mb-4 flex items-center justify-center`}
-                  >
-                    <Icon className="w-8 h-8" />
-                  </motion.div>
-                  <div className={`text-3xl font-bold ${stat.color} mb-2`}>
-                    {stat.value}
-                  </div>
-                  <div className="text-white/70">
-                    {stat.label}
-                  </div>
-                </motion.div>
-              );
-            })}
-          </motion.div>
-
-          {/* Key Benefits Section */}
-          <motion.div
-            variants={itemVariants}
-            className="bg-gradient-to-r from-primary-500/10 to-secondary-500/10 rounded-3xl p-8 md:p-12 border border-white/10 mb-16"
-          >
-            <h3 className="text-3xl font-bold text-slate-100 mb-8">
-              Why Inventura Matters
-            </h3>
-            
-            <div className="grid md:grid-cols-3 gap-8">
-              {whyInventuraMatters.map((item, index) => {
-                const Icon = item.icon;
-                return (
-                  <motion.div
-                    key={item.title}
-                    whileHover={{ scale: 1.05, y: -5 }}
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-                    transition={{ delay: 1.5 + index * 0.1 }}
-                    className="text-center"
-                  >
-                    <motion.div
-                      whileHover={{ rotate: 360 }}
-                      transition={{ duration: 0.5 }}
-                      className={`w-16 h-16 bg-gradient-to-r ${item.color} rounded-full flex items-center justify-center mx-auto mb-4`}
-                    >
-                      <Icon className="w-8 h-8 text-white" />
-                    </motion.div>
-                    <h4 className="text-xl font-semibold text-white mb-2">{item.title}</h4>
-                    <p className="text-white/70">{item.description}</p>
-                  </motion.div>
-                );
-              })}
-            </div>
-          </motion.div>
 
           {/* Call to Action */}
           <motion.div
@@ -234,9 +135,9 @@ const Conclusion = () => {
             className="text-center"
           >
             <div className="glass-effect rounded-2xl p-8 max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold text-slate-100 mb-4">
-              Ready to Transform Your Inventory Management?
-            </h3>
+              <h3 className="text-2xl font-bold text-slate-100 mb-4">
+                Ready to Transform Your Inventory Management?
+              </h3>
               <p className="text-white/70 mb-6">
                 Join the revolution in smart inventory management. Let's build the future together.
               </p>

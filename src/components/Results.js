@@ -30,17 +30,17 @@ const Results = () => {
   const results = [
     {
       icon: Clock,
-      number: '60-70%',
-      label: 'Time Saved',
-      description: 'on daily stock updates through automation',
+      number: 'Automated',
+      label: 'Stock Updates',
+      description: 'Streamlined daily inventory management',
       color: 'from-blue-500 to-cyan-500',
       delay: 0,
     },
     {
       icon: TrendingUp,
-      number: '80%',
-      label: 'Reduction',
-      description: 'in stock mismatches and discrepancies',
+      number: 'Improved',
+      label: 'Accuracy',
+      description: 'Better stock tracking and management',
       color: 'from-green-500 to-emerald-500',
       delay: 0.1,
     },
@@ -48,31 +48,31 @@ const Results = () => {
       icon: Lightbulb,
       number: 'Smart',
       label: 'Purchasing',
-      description: 'decisions thanks to AI-powered insights',
+      description: 'AI-powered insights for better decisions',
       color: 'from-yellow-500 to-orange-500',
       delay: 0.2,
     },
     {
       icon: Leaf,
-      number: '20-30%',
-      label: 'Wastage Reduction',
-      description: 'especially for perishable goods',
+      number: 'Reduced',
+      label: 'Wastage',
+      description: 'Better management of perishable goods',
       color: 'from-green-400 to-teal-500',
       delay: 0.3,
     },
     {
       icon: Users,
-      number: 'Higher',
+      number: 'Enhanced',
       label: 'Collaboration',
-      description: 'through stock-sharing network',
+      description: 'Community-driven stock sharing',
       color: 'from-purple-500 to-pink-500',
       delay: 0.4,
     },
     {
       icon: DollarSign,
-      number: '₹',
-      label: 'Increased Profits',
-      description: 'through optimized inventory management',
+      number: 'Optimized',
+      label: 'Profits',
+      description: 'Better inventory management practices',
       color: 'from-emerald-500 to-green-500',
       delay: 0.5,
     },
@@ -305,20 +305,20 @@ const Results = () => {
               ROI Calculator
             </h3>
             <p className="text-white/70 text-lg mb-6">
-              For a typical small vendor with ₹50,000 monthly inventory turnover
+              For small and mid-scale vendors looking to optimize their operations
             </p>
             <div className="grid md:grid-cols-3 gap-6 mb-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary-400 mb-2">₹15,000</div>
+                <div className="text-3xl font-bold text-primary-400 mb-2">Significant</div>
                 <div className="text-white/70">Monthly Savings</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-secondary-400 mb-2">₹180,000</div>
-                <div className="text-white/70">Annual Savings</div>
+                <div className="text-3xl font-bold text-secondary-400 mb-2">Substantial</div>
+                <div className="text-white/70">Annual Benefits</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-accent-400 mb-2">360%</div>
-                <div className="text-white/70">ROI in First Year</div>
+                <div className="text-3xl font-bold text-accent-400 mb-2">High</div>
+                <div className="text-white/70">Return on Investment</div>
               </div>
             </div>
             
