@@ -2,19 +2,19 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Boxes } from 'lucide-react';
 
+const navItems = [
+  { name: 'Overview', href: '#hero' },
+  { name: 'Challenge', href: '#challenge' },
+  { name: 'Solution', href: '#solution' },
+  { name: 'Technology', href: '#technology' },
+  { name: 'Results', href: '#results' },
+  { name: 'Roadmap', href: '#roadmap' },
+];
+
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('hero');
-
-  const navItems = [
-    { name: 'Overview', href: '#hero' },
-    { name: 'Challenge', href: '#challenge' },
-    { name: 'Solution', href: '#solution' },
-    { name: 'Technology', href: '#technology' },
-    { name: 'Results', href: '#results' },
-    { name: 'Roadmap', href: '#roadmap' },
-  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -38,7 +38,7 @@ const Navbar = () => {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [navItems]);
+  }, []);
 
   const scrollToSection = (href) => {
     const element = document.querySelector(href);
